@@ -48,7 +48,7 @@ test('it displays the correct text', async () => {
       /That's pretty much it! Thanks for dropping by. If you'd like to get in touch come and find me using the links below./i,
     ),
   ).toBeDefined();
-  expect(getByText(/© 2019 Will Golledge/i)).toBeDefined();
+  expect(getByText(/© 2020 Will Golledge/i)).toBeDefined();
 });
 
 test('it displays each of the links', async () => {

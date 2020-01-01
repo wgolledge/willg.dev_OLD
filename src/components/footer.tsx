@@ -49,7 +49,7 @@ const Footer = () => (
     <StyledDiv>
       <Links />
       <CopyrightWrapper>
-        <Link to="/">© 2019 Will Golledge</Link>
+        <Link to="/">© 2020 Will Golledge</Link>
       </CopyrightWrapper>
     </StyledDiv>
   </StyledFooter>
