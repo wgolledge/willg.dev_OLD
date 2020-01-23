@@ -8,12 +8,14 @@ const IntroWrapper = styled.div`
 const StyledH1 = styled.h2`
   ${({ theme: { media } }) => media.mobile`
     font-size: 1.4rem;
+    text-align: left;
   `}
 `;
 const StyledH2 = styled.h2`
   font-size: 1.2rem;
   ${({ theme: { media } }) => media.mobile`
     font-size: 1rem;
+    text-align: left;
   `}
 `;
 const Intro = () => (

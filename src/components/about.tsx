@@ -22,7 +22,6 @@ const StyledP = styled.p`
   font-size: 1.1rem;
   ${({ theme: { media } }) => media.mobile`
     font-size: 0.9rem;
-    text-align: center;
   `}
 `;
 

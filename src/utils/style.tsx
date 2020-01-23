@@ -60,7 +60,7 @@ export const media = Object.keys(BREAKPOINTS).reduce(
 
 export const THEME: ITheme = {
   breakpoints: BREAKPOINTS,
-  maxContentWidth: 960,
+  maxContentWidth: 1060,
   media,
   palette: {
     background: '#332E3C',
@@ -69,7 +69,7 @@ export const THEME: ITheme = {
   },
   font: {
     minSize: 13,
-    maxSize: 21,
+    maxSize: 26,
   },
 };
 

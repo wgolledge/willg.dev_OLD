@@ -37,7 +37,7 @@ const CopyrightWrapper = styled.div`
   margin-top: 1.6rem;
   a {
     color: ${({ theme }) => theme.palette.text};
-    font-size: 0.8em;
+    font-size: 0.9rem;
     font-weight: 800;
     text-decoration: none;
   }
