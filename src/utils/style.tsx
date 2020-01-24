@@ -63,7 +63,7 @@ export const THEME: ITheme = {
   maxContentWidth: 1060,
   media,
   palette: {
-    background: '#332E3C',
+    background: '#26242A',
     secondary: '#F3F3D6',
     text: '#F3F3D6',
   },

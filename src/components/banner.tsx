@@ -14,9 +14,6 @@ import {
 const BannerDiv = styled.div`
   height: 20vh;
   overflow: visible;
-  ${({ theme: { media } }) => media.mobile`
-    padding-right: 1.1rem;
-  `}
 `;
 
 const Overlay = styled.div`
