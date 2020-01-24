@@ -11,12 +11,10 @@ const LayoutDiv = styled.div`
 `;
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
-  <>
-    <LayoutDiv>
-      <main>{children}</main>
-      <Footer />
-    </LayoutDiv>
-  </>
+  <LayoutDiv>
+    <main>{children}</main>
+    <Footer />
+  </LayoutDiv>
 );
 
 export default Layout;

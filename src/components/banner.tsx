@@ -63,7 +63,8 @@ const Banner = () => {
       replaceCanvas();
       return new LeonSans({
         ...DEFAULT_LEON,
-        size: clientWidth > 800 ? 100 : clientWidth / 8,
+        size:
+          clientWidth > THEME.breakpoints.desktop ? 100 : clientWidth / 7.15,
         ...(isWave && {
           isWave: true,
           pathGap: 0.00000000001,
@@ -100,7 +101,7 @@ const Banner = () => {
 
     const handleResize = () => {
       ({ clientWidth, clientHeight } = mount.current as HTMLDivElement);
-      leon.size = clientWidth > 800 ? 100 : clientWidth / 8;
+      leon.size = clientWidth > 800 ? 100 : clientWidth / 7.15;
       setupCanvas();
     };
 

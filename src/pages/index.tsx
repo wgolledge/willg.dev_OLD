@@ -17,11 +17,11 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${THEME.palette.background};
-    
+
     font-family: 'Muli', sans-serif;
-    font-size: ${THEME.font.minSize}px;  
-    letter-spacing: 0.07rem;
-    line-height: 1.5rem;
+    font-size: ${THEME.font.minSize}px;
+    letter-spacing: 0.09rem;
+    line-height: 1.7rem;
 
     @media screen and (max-width: ${
       THEME.maxContentWidth

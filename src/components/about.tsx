@@ -20,14 +20,10 @@ const Wrapper = styled.div`
 
 const StyledP = styled.p`
   font-size: 1.1rem;
+  margin-bottom: 0;
   ${({ theme: { media } }) => media.mobile`
     font-size: 0.9rem;
-    text-align: center;
   `}
-`;
-
-const Italic = styled.span`
-  font-style: italic;
 `;
 
 const About = () => (
@@ -43,8 +39,7 @@ const About = () => (
       <StyledP>
         I'm passionate about tooling and optimising DX. While I care more about
         the product than the technology used, I love working with JavaScript
-        (and React❤️). I value the importance of making things{' '}
-        {<Italic>fast</Italic>} so have been upskilling in Golang and Workbox🚀.
+        (and React❤️).
       </StyledP>
     </Wrapper>
     <StyledP>
