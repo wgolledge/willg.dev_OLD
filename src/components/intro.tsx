@@ -21,10 +21,10 @@ const StyledH2 = styled.h2`
 `;
 const Intro = () => (
   <IntroWrapper>
-    <Hi>Hi, welcome to my site!</Hi>
+    <Hi>Hi 👋 welcome to my site!</Hi>
     <StyledH2>
-      I&apos;m Will, a developer consultant for AND Digital, currently working
-      at Shawbrook Bank.
+      I&apos;m Will, a developer consultant for Formidable, currently working
+      with all things JavaScript.
     </StyledH2>
   </IntroWrapper>
 );

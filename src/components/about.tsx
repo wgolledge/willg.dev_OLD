@@ -37,9 +37,9 @@ const About = () => (
         production across the whole stack.
       </StyledP>
       <StyledP>
-        I'm passionate about tooling and optimising DX. While I care more about
-        the product than the technology used, I love working with JavaScript
-        (and React❤️).
+        I'm passionate about tooling and optimising DX. I care more about the
+        product than the technology used, and love working with anything in the
+        extended JS ecosystem that helps developers build great apps.
       </StyledP>
     </Wrapper>
     <StyledP>
