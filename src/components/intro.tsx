@@ -23,8 +23,7 @@ const Intro = () => (
   <IntroWrapper>
     <Hi>Hi 👋 welcome to my site!</Hi>
     <StyledH2>
-      I&apos;m Will, a developer consultant for Formidable, currently working
-      with all things JavaScript.
+      I&apos;m Will, a developer consultant for Formidable, helping clients to build beautiful and performant apps.
     </StyledH2>
   </IntroWrapper>
 );
