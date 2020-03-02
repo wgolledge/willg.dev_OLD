@@ -3,9 +3,9 @@ import { styled } from '../utils/style';
 import Footer from './footer';
 
 const LayoutDiv = styled.div`
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: ${({ theme }) => theme.maxContentWidth}px;
-  padding: 0px 1.1rem;
+  padding: 0 2rem;
   position: relative;
   color: ${({ theme }) => theme.palette.text};
 `;

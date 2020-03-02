@@ -13,7 +13,7 @@ const Hi = styled.h2`
 `;
 const StyledH2 = styled.h2`
   font-size: 1.2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   ${({ theme: { media } }) => media.mobile`
     font-size: 1rem;
     text-align: left;
@@ -23,7 +23,8 @@ const Intro = () => (
   <IntroWrapper>
     <Hi>Hi 👋 welcome to my site!</Hi>
     <StyledH2>
-      I&apos;m Will, a developer consultant for Formidable, helping clients to build beautiful and performant apps.
+      I&apos;m Will, a developer consultant for Formidable, helping clients to
+      build beautiful and performant apps.
     </StyledH2>
   </IntroWrapper>
 );

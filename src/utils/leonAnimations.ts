@@ -23,7 +23,7 @@ export const wave = ({ leon, onComplete }: IAnimProps) => {
     { amplitude: 0 },
     {
       amplitude: 0.4,
-      delay: 1,
+      delay: 0.5,
       ease: Expo.easeIn,
       repeat: 1,
       yoyo: true,
@@ -63,7 +63,7 @@ export const draw = ({ leon, onComplete, isFirst }: IAnimProps) => {
       2,
       { value: 0 },
       {
-        delay: i * 0.08 + (!isFirst ? 1.5 : 0),
+        delay: i * 0.08 + (!isFirst ? 1 : 0),
         value: 1,
         ease: Expo.easeOut,
         onComplete: () => {
@@ -95,7 +95,7 @@ export const stretchAndBounceBack = ({ leon, onComplete }: IAnimProps) => {
     { tracking: 0.5 },
     {
       tracking: 2.5,
-      delay: 1.5,
+      delay: 0.5,
       ease: Power1.easeIn,
       repeat: 0,
       yoyo: false,

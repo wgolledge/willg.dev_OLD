@@ -5,12 +5,11 @@ import { styled } from '../utils/style';
 
 const StyledWrapper = styled.div`
   ${({ theme: { media } }) => media.mobile`
-    min-width: 140px;
-    padding: 0;
+    display: none;
   `}
   ${({ theme: { media } }) => media.desktop`
-    min-width: 230px;
-    padding: 20px;
+    max-width: 14rem;
+    width: 80%;
   `}
   grid-row: row1-start / row2-end;
 `;

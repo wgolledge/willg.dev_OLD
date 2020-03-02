@@ -32,7 +32,7 @@ export interface ITheme {
 
 const BREAKPOINTS: IBreakpoints = {
   mobile: 0,
-  desktop: 650,
+  desktop: 750,
 };
 
 type mediaType = Record<
@@ -47,7 +47,7 @@ export const media = Object.keys(BREAKPOINTS).reduce(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     acc[size] = (literals: TemplateStringsArray, ...placeholders: any[]) =>
       css`
-        @media (min-width: ${BREAKPOINTS[size]}px) ${arr.includes(
+        @media (min-width: ${BREAKPOINTS[size]! + 1}px) ${arr.includes(
             arr[idx + 1],
           ) && `and (max-width: ${BREAKPOINTS[arr[idx + 1]]}px)`} {
           ${css(literals, ...placeholders)};
@@ -60,7 +60,7 @@ export const media = Object.keys(BREAKPOINTS).reduce(
 
 export const THEME: ITheme = {
   breakpoints: BREAKPOINTS,
-  maxContentWidth: 1070,
+  maxContentWidth: 1050,
   media,
   palette: {
     background: '#26242A',
