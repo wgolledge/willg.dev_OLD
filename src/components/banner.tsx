@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 // @ts-ignore
 import { LeonSans } from '../scripts/leonsans';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { THEME } from '../utils/style';
 import {
   wave as waveImport,
@@ -11,13 +11,19 @@ import {
   stretchAndBounceBack,
 } from '../utils/leonAnimations';
 
+const bannerCss = css`
+  height: 18vh;
+  ${({ theme: { media } }) => media.mobile`
+    height: 15vh;
+  `}
+`;
 const BannerDiv = styled.div`
-  height: 20vh;
+  ${bannerCss}
   overflow: visible;
 `;
 
 const Overlay = styled.div`
-  height: 20vh;
+  ${bannerCss}
 `;
 
 const DEFAULT_LEON = {
