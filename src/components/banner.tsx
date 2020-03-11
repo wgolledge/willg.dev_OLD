@@ -12,13 +12,14 @@ import {
 } from '../utils/leonAnimations';
 
 const bannerCss = css`
-  height: 18vh;
+  height: 17vh;
   ${({ theme: { media } }) => media.mobile`
     height: 15vh;
   `}
 `;
 const BannerDiv = styled.div`
   ${bannerCss}
+  margin-top: ${p => p.theme.spacing.md};
   overflow: visible;
 `;
 
@@ -69,8 +70,7 @@ const Banner = () => {
       replaceCanvas();
       return new LeonSans({
         ...DEFAULT_LEON,
-        size:
-          clientWidth > THEME.breakpoints.desktop ? 100 : clientWidth / 7.15,
+        size: clientWidth > 600 ? 90 : clientWidth / 7.15,
         ...(isWave && {
           isWave: true,
           pathGap: 0.00000000001,
@@ -107,7 +107,7 @@ const Banner = () => {
 
     const handleResize = () => {
       ({ clientWidth, clientHeight } = mount.current as HTMLDivElement);
-      leon.size = clientWidth > 800 ? 100 : clientWidth / 7.15;
+      leon.size = clientWidth > 600 ? 90 : clientWidth / 7.15;
       setupCanvas();
     };
 

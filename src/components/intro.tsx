@@ -6,16 +6,19 @@ const IntroWrapper = styled.div`
   width: 100%;
 `;
 const Hi = styled.h2`
-  margin-top: 0;
+  margin: 0 0 ${p => p.theme.spacing.md} 0;
+  font-size: 2rem;
   ${({ theme: { media } }) => media.mobile`
     font-size: 1.4rem;
   `}
 `;
 const StyledH2 = styled.h2`
   font-size: 1.2rem;
-  padding-top: 2rem;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
   ${({ theme: { media } }) => media.mobile`
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: left;
   `}
 `;

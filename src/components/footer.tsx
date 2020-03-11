@@ -6,13 +6,12 @@ import Links from './links';
 
 const StyledFooter = styled.footer`
   width: 100%;
-  margin-top: 2rem;
 `;
 
 const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: ${({ theme }) => theme.maxContentWidth}px;
-  padding: 1.6rem 0.3rem;
+  padding: ${p => p.theme.spacing.sm} ${p => p.theme.spacing.xs};
 `;
 
 const StyledHr = styled.hr`
@@ -34,7 +33,7 @@ const StyledHr = styled.hr`
 const CopyrightWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 1.6rem;
+  margin-top: ${p => p.theme.spacing.sm};
   a {
     color: ${({ theme }) => theme.palette.text};
     font-size: 0.9rem;

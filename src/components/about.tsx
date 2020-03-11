@@ -6,17 +6,24 @@ import Image from './image';
 const Wrapper = styled.div`
   align-items: center;
   display: grid;
-  grid-row-gap: 1.5rem;
+  grid-row-gap: ${p => p.theme.spacing.md};
   grid-template-columns: 1fr;
   justify-items: center;
+  margin: ${p => p.theme.spacing.md} 0;
   width: 100%;
-  ${({ theme: { media } }) => media.mobile`
-    grid-row-gap: 1rem;
+  ${p => p.theme.media.mobile`
+    margin: ${p.theme.spacing.sm} 0;
+    grid-row-gap: ${p.theme.spacing.sm};
   `}
-  ${({ theme: { media } }) => media.desktop`
-    grid-template-columns: 1fr 2fr;
+  ${p => p.theme.media.desktop`
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
   `}
+
+  p {
+    margin: 0;
+    width: 100%;
+  }
 `;
 
 const StyledP = styled.p`
