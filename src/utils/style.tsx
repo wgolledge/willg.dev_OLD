@@ -11,6 +11,10 @@ interface IBreakpoints {
   [key: string]: number | undefined;
 }
 
+interface ISpacing {
+  [key: string]: string;
+}
+
 interface IPalette {
   background: string;
   secondary: string;
@@ -24,6 +28,7 @@ interface IFont {
 
 export interface ITheme {
   breakpoints: IBreakpoints;
+  spacing: ISpacing;
   maxContentWidth: number;
   media: mediaType;
   palette: IPalette;
@@ -32,7 +37,15 @@ export interface ITheme {
 
 const BREAKPOINTS: IBreakpoints = {
   mobile: 0,
-  desktop: 750,
+  desktop: 1050,
+};
+
+const SPACING: ISpacing = {
+  xs: '0.6rem',
+  sm: '1.5rem',
+  md: '2.75rem',
+  lg: '4.75rem',
+  xl: '8.2rem',
 };
 
 type mediaType = Record<
@@ -60,6 +73,7 @@ export const media = Object.keys(BREAKPOINTS).reduce(
 
 export const THEME: ITheme = {
   breakpoints: BREAKPOINTS,
+  spacing: SPACING,
   maxContentWidth: 1050,
   media,
   palette: {
