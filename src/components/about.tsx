@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledP = styled.p`
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0;
   ${({ theme: { media } }) => media.mobile`
     font-size: 0.9rem;

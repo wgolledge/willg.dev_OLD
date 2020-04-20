@@ -33,7 +33,7 @@ const StyledHr = styled.hr`
 const CopyrightWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: ${p => p.theme.spacing.sm};
+  margin-top: ${p => p.theme.spacing.xs};
   a {
     color: ${({ theme }) => theme.palette.text};
     font-size: 0.9rem;
