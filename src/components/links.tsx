@@ -19,7 +19,7 @@ export const LINK_DATA: ILinkItem[] = [
     name: `linkedin`,
   },
   {
-    url: `mailto:info@willgolledge.com`,
+    url: `mailto:hi@willg.dev`,
     name: `email`,
   },
 ];

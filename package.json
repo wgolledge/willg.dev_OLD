@@ -3,7 +3,7 @@
   "private": true,
   "description": "Will Golledge portfolio site",
   "version": "1.0.0",
-  "author": "Will Golledge <info@willgolledge.com>",
+  "author": "Will Golledge <hi@willg.dev>",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
